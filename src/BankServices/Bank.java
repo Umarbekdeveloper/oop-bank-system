@@ -16,10 +16,11 @@ public class Bank {
 	
 	public int createAccount(String name, int date, double initial) {
 		Account account = new Account(name,date,initial);
-		return account.g;
+		return account.getCode();
 	}
 	
 	public Account deleteAccount(int code, int date) {
+		if (account.getC)
 		return null;
 	}
 	
