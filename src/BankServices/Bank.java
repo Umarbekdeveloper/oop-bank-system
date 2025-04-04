@@ -5,10 +5,9 @@ import library.list.MyList;
 
 public class Bank {
 	private String name;
-	private MyList accounts;
 	
-	public Bank(String n) {
-		this.name=n;
+	public Bank(String name) {
+		this.name=name;
 	}
 	
 	public String getName() {
@@ -16,8 +15,8 @@ public class Bank {
 	}
 	
 	public int createAccount(String name, int date, double initial) {
-		accounts.add(name,date,initial);
-		return 0;
+		Account account = new Account(name,date,initial);
+		return account.g;
 	}
 	
 	public Account deleteAccount(int code, int date) {

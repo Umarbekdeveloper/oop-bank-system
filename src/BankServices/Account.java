@@ -5,10 +5,16 @@ import library.list.MyList;
 
 public class Account {
 	private int accountNumber;
-	private String owner;
+	private String ownerName;
 	private double balance;
-	private MyList transactions;
-	
+	private int date;
+
+	public Account(String ownerName, int date, double balance) {
+		this.ownerName = ownerName;
+		this.balance = balance;
+		this.date = date;
+	}
+
 	public String toString() {
 		return null;
 	}
